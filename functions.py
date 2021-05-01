@@ -93,6 +93,7 @@ def plot_predictions(symbol, prediction_days, hist_days, degree, predictions, st
     plt.legend()
     if save:
         fig.savefig(f'{getcwd()}/output/charts/{symbol}.png', bbox_inches='tight')
+        plt.close(fig)
     if show:
         plt.show()
 
