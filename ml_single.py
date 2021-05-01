@@ -34,7 +34,10 @@ def predict_stock(symbol, prediction_days, verbose=False, show_graph=False, save
     for hist_days in history:
         if verbose:
             print(hist_days)
-        # Split data
+
+        # Divide data for training and testing.
+        # Testing is the most x most recent data points. x = prediction_days
+        # Training is the y most recent data points before the testing data. y = hist_days
         train_data, test_data = stock[:-prediction_days][-hist_days:], stock[-prediction_days:]
         # Get closing prices.
         train_data, test_data = train_data['Close'].values, test_data['Close'].values\
@@ -90,4 +93,4 @@ def predict_stock(symbol, prediction_days, verbose=False, show_graph=False, save
 
 
 if __name__ == '__main__':
-    predict_stock('bcor', 90, True, True)
+    predict_stock('aapl', 90, True, True)
