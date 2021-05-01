@@ -5,6 +5,13 @@ The input data used includes thousands of stocks up to 11-10-2017.
 
 https://www.kaggle.com/borismarjanovic/price-volume-data-for-all-us-stocks-etfs
 
+ml_test.py is used to manually input specific prediction days, training day ranges, and polynomial degrees for a specific stock in order to view charted, immediate results.
+
+ml_single.py is used for predictions of a single stock where ideal parameter finding is automated and then used in its prediction.
+
+ml_many.py is used to run on multiple, randomly chosen stocks for evaluating the overall accuracy of the model. Results are saved to /output/output.txt, and charts of stocks with potentially upward trends are saved to /output/charts.
+
+
 ## Approach
 A benchmark of 90 prediction days was used. Polynomial regression is used to model the price predictions. First, on a portion of the data which is initially limited by the amount of desired prediction days, a wide range of training day ranges and polynomial degrees are tried and predicted with the given data set. These predictions are tested against the most recent data which is equal in range to the prediction days. Once the parameters with the lowest mean absolute error is found, predictions are then made on the non-limited data set with the best parameters.
 
