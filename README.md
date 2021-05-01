@@ -23,3 +23,6 @@ Across 855 randomly chosen stocks, there was an average mean relative accuracy o
 
 ## Possible Applications
 It was observed that the model does well in its predictions when there was a clear trend in the data. A possible application would be to find predictions made across thousands of stocks which have a positive angle of sufficient degrees. These could then be reviewed by a human to discover unfamiliar stocks with an upward trend.
+
+## Concerns
+The impact of algorithms on the stock market is a growing concern. Machine learning can lend an unfair advantage in favor of those who possess robust data sets and resources to dedicate to algorithmic trading. But, if such tools are widely available to the general trading public, applications such as this one could help to level the playing field. However, the consequences of widespread applications of machine learning to stock market speculation is ultimately unknown and potentially catastrophic.
