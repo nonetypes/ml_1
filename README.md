@@ -19,5 +19,7 @@ Polynomial regression is used to model the price predictions. First, on a portio
 A benchmark of 90 prediction days was used. In determining the accuracy of predictions, a mean relative accuracy of all predictions against the test data was applied.
 Unexpectedly, accuracy results can vary widely due to the inherently unpredictable nature of stocks. However, for individual stocks, relative accuracies of >90% are not uncommon. Due to the nature of polynomial regression, predictions which veer wildly off track are not uncommon either. The results are heavily influenced by the number of predictions which are made — the greater the number, the lower the accuracy.
 
+Across 855 randomly chosen stocks, there was an average mean relative accuracy of 52.42%, and 38% of the stocks had a mean relative accuracy of obove 90%. Of the 855 stocks, 337 were identified by the model as having predictions with a sufficient postive degree, indicating a potential positive trend. Of those 337, 47% were confirmed by the test data to have a positive gain in price at the end of the 90 days. While these results are not impressive, the model may still have potential and improvements could yet be made.
+
 ## Possible Applications
 It was observed that the model does well in its predictions when there was a clear trend in the data. A possible application would be to find predictions made across thousands of stocks which have a positive angle of sufficient degrees. These could then be reviewed by a human to discover unfamiliar stocks with an upward trend.
